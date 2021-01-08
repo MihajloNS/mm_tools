@@ -10,7 +10,7 @@ OBJECTS = $(SOURCES:.c=.o)
 all: $(TARGET)
 
 $(TARGET): $(OBJECTS)
-	$(CXX) $(CXXFLAGS) ${LDFLAGS} -o $(TARGET) $(OBJECTS) ${LIBS}
+	$(CXX) $(CXXFLAGS) $(LDFLAGS) -o $(TARGET) $(OBJECTS) $(LIBS)
 
 clean:
 	rm -f ${TARGET}
